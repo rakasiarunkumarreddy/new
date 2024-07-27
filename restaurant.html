@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .restaurant {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            width: 30%;
+            overflow: hidden;
+        }
+        .restaurant img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .restaurant h3 {
+            padding: 15px;
+            margin: 0;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .restaurant {
+                width: 48%;
+            }
+        }
+        @media (max-width: 480px) {
+            .restaurant {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="restaurant">
+            <img src="https://tinyurl.com/3msmfwp3" alt="Restaurant 1">
+            <h3>Restaurant 1</h3>
+        </div>
+        <div class="restaurant">
+            <img src="https://tinyurl.com/3msmfwp3" alt="Restaurant 2">
+            <h3>Restaurant 2</h3>
+        </div>
+        <div class="restaurant">
+            <img src="https://tinyurl.com/3msmfwp3" alt="Restaurant 3">
+            <h3>Restaurant 3</h3>
+        </div>
+        <div class="restaurant">
+            <img src="https://tinyurl.com/3msmfwp3" alt="Restaurant 4">
+            <h3>Restaurant 4</h3>
+        </div>
+        <div class="restaurant">
+            <img src="https://tinyurl.com/3msmfwp3" alt="Restaurant 5">
+            <h3>Restaurant 5</h3>
+        </div>
+        <div class="restaurant">
+            <img src="https://tinyurl.com/3msmfwp3" alt="Restaurant 6">
+            <h3>Restaurant 6</h3>
+        </div>
+    </div>
+</body>
+</html>
