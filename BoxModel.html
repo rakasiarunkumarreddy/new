@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Box Model</title>
+        <style>
+            .first {
+                margin: 15px;
+                border: 1px dashed red;
+            }
+            .second {
+                margin: 15px;
+                border: 1px dotted seagreen;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- gets overlapped  -->
+        <div class="first">
+            <p>First Element</p>
+        </div>
+        <div style="padding: 1px;">
+            <!-- avoid overlap using empty element-->
+        </div>
+        <div class="second">
+            <p>Second Element</p>
+        </div>
+    </body>
+</html>
