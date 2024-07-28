@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    max-width: 100%;
+    gap: 5px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    font-size: 1em;
+    flex: 1 0 6.5%; /* Default flex property for most keys */
+}
+
+.key.backspace {
+    flex: 1 0 14%;
+}
+
+.key.tab {
+    flex: 1 0 9%;
+}
+
+.key.caps {
+    flex: 1 0 11%;
+}
+
+.key.enter {
+    flex: 1 0 14%;
+}
+
+.key.shift {
+    flex: 1 0 12%;
+}
+
+.key.space {
+    flex: 1 0 45%;
+}
+
+.key.ctrl, .key.alt, .key.fn {
+    flex: 1 0 6.5%;
+}
+
+.key:hover {
+    background-color: #45a049;
+}
+
+.key:active {
+    background-color: #3e8e41;
+    transform: scale(0.95);
+}
