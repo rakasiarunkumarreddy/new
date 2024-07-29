@@ -1,0 +1,27 @@
+/* styles.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.fan {
+    width: 100px;
+    height: 100px;
+    background: conic-gradient(#f00 0 90deg, #0f0 90deg 180deg, #00f 180deg 270deg, #ff0 270deg 360deg);
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,73 @@
+/* styles.css */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.fan-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.fan {
+    width: 100px;
+    height: 100px;
+    background: conic-gradient(#f00 0 90deg, #0f0 90deg 180deg, #00f 180deg 270deg, #ff0 270deg 360deg);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: spin 2s linear infinite;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.controls label {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ddd;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    user-select: none;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #bbb;
+}
+
+#stop:checked ~ .fan-container .fan {
+    animation: none;
+}
+
+#slow:checked ~ .fan-container .fan {
+    animation: spin 3s linear infinite;
+}
+
+#medium:checked ~ .fan-container .fan {
+    animation: spin 1.5s linear infinite;
+}
+
+#fast:checked ~ .fan-container .fan {
+    animation: spin 0.75s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
