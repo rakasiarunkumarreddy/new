@@ -1,0 +1,74 @@
+div{
+    width:150px;
+    height:150px;
+    display:inline-block;
+}
+.one{
+    background:orange;
+    /* to move in x or y direction */
+    /* transform:translateX(10px); */
+    transform:scale(0.5)    
+}
+.two{
+    background:red;
+    /* transform:translateX(-40px); */
+    transform:scale(1)    ;
+/* value starts from 0 to - */
+transform:rotate(120deg);
+}
+.three{
+    background:pink;
+    /* transform:translateX(20px,40px); */
+    transform:scale(0.5,0.5) ;  
+     /* for x and y direction */
+
+}
+.four{
+    background:maroon;
+ transform:skewX(45deg)
+}
+.five{
+background:red;
+
+}
+.six{
+background:black;
+}
+
+/* transition:change over time */
+
+.one1{
+background:red;
+transition-property: background,;
+transition-duration:3s;
+
+}
+.one1:hover{
+    border-radius:50%;
+}
+.two2{
+    background:blue;
+    transition-property: background,border-radius;
+    transition-duration:3s,0.2;
+    transition-delay:5s;
+}
+.two2:hover{
+    border-radius:115%;
+
+}
+.three3{
+    background:maroon;
+
+}
+.four4{
+    background:black;
+
+}
+.five5{
+    background:pink;
+
+}
+.six6{
+    background:red;
+
+}
