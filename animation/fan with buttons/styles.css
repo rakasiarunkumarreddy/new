@@ -10,22 +10,13 @@ body {
     background-color: #f0f0f0;
 }
 
-.fan-container {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
-}
-
 .fan {
     width: 100px;
     height: 100px;
     background: conic-gradient(#f00 0 90deg, #0f0 90deg 180deg, #00f 180deg 270deg, #ff0 270deg 360deg);
     border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: spin 2s linear infinite;
+    margin-bottom: 20px;
+    animation: none;
 }
 
 input[type="radio"] {
@@ -47,19 +38,19 @@ input[type="radio"]:checked + label {
     background-color: #bbb;
 }
 
-#stop:checked ~ .fan-container .fan {
+#stop:checked ~ .fan {
     animation: none;
 }
 
-#slow:checked ~ .fan-container .fan {
+#slow:checked ~ .fan {
     animation: spin 3s linear infinite;
 }
 
-#medium:checked ~ .fan-container .fan {
+#medium:checked ~ .fan {
     animation: spin 1.5s linear infinite;
 }
 
-#fast:checked ~ .fan-container .fan {
+#fast:checked ~ .fan {
     animation: spin 0.75s linear infinite;
 }
 
